@@ -1,0 +1,26 @@
+{
+  "name": "Nilda Rodrigues - Pintura em Tecido",
+  "short_name": "Nilda Rodrigues",
+  "description": "Evento online e gratuito de pintura em tecido com Nilda Rodrigues",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F9E3CE",
+  "theme_color": "#F9E3CE",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/assets/midia/images/nilda-miranda.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/midia/images/nilda-miranda.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["education", "lifestyle"],
+  "lang": "pt-BR"
+}

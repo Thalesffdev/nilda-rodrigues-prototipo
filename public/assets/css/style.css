@@ -1,0 +1,81 @@
+/*Prédefinições*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/*Efeitos Fades*/
+.fade {
+    opacity: 0;
+    transition: opacity var(--speed) ease, transform var(--speed) ease;
+}
+.fade.show {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.fade.slow { --speed: 1.2s; }
+.fade.medium { --speed: 0.8s; }
+.fade.fast { --speed: 0.4s; }
+
+.fade-top {
+    transform: translateY(-50px);
+}
+.fade-bottom {
+    transform: translateY(50px);
+}
+.fade-left {
+    transform: translateX(-50px);
+}
+.fade-right {
+    transform: translateX(50px);
+}
+
+
+/*Gradient effect*/
+
+.gradientColor {
+    background: linear-gradient(90deg, #5d4f42, #f5cb60, #5d4f42);
+    background-size: 300% 100%; 
+    background-position: 0% 50%;
+    background-clip: text;
+    color: transparent;
+    animation: gradient 6s ease infinite;
+  }
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+.gradientBg{
+    background: linear-gradient(45deg, rgba(93, 79, 66, 0.8), rgba(213, 163, 38, 0.8), rgba(93, 79, 66, 0.8));
+    background-size: 300% 100%; 
+    background-position: 0% 50%;
+    backdrop-filter: blur(10px);
+    animation: gradient 6s ease infinite;
+}
+
+/*border gradient*/
+
+
+/* Transições suaves para hover sem afetar fade */
+.hover-smooth {
+    transition: background-color 0.5s ease, transform var(--speed) ease;
+}
+
+.hover-translate{
+    transition: transform var(--speed) ease;
+}
+.hover-translate:hover {
+    transform: translateX(30px);
+}

@@ -1,0 +1,19 @@
+# robots.txt para nildarodrigues.com.br
+# Otimizado para SEO e indexação
+
+User-agent: *
+Allow: /
+
+# Bloquear arquivos desnecessários
+Disallow: /assets/js/
+Disallow: /*.json$
+
+# Permitir recursos importantes
+Allow: /assets/css/
+Allow: /assets/midia/
+
+# Sitemap
+Sitemap: https://www.nildarodrigues.com.br/sitemap.xml
+
+# Crawl-delay (opcional, ajustar conforme necessário)
+# Crawl-delay: 1
