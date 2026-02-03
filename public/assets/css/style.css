@@ -65,12 +65,18 @@
     animation: gradient 6s ease infinite;
 }
 
+.gradientBgStatic{
+    background: linear-gradient(to bottom, #F9E3CE, rgba(210, 159, 31, 0.8));
+    background-size: 300% 100%; 
+    background-position: 0% 50%;
+    backdrop-filter: blur(10px);
+}
 /*border gradient*/
 
 
 /* Transições suaves para hover sem afetar fade */
 .hover-smooth {
-    transition: background-color 0.5s ease, transform var(--speed) ease;
+    transition: background-color 0.5s ease, transform 0.5s ease;
 }
 
 .hover-translate{
