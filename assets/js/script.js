@@ -1,5 +1,4 @@
 /*Observador de elementos Fades*/
-
 const fades = document.querySelectorAll('.fade');
 
 const observer = new IntersectionObserver((entries) => {
@@ -12,3 +11,15 @@ const observer = new IntersectionObserver((entries) => {
 });
     
 fades.forEach(el => observer.observe(el));
+
+
+/*Slide de vagas - Animação contínua via CSS*/
+const slideVagasTrack = document.querySelector('#slide-vagas-track');
+const vagas = Array.from(slideVagasTrack.children);
+
+// Duplicar as vagas para efeito seamless
+vagas.forEach(vaga => {
+    const clonoVaga = vaga.cloneNode(true);
+    slideVagasTrack.appendChild(clonoVaga);
+});
+   

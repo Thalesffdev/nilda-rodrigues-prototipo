@@ -96,3 +96,35 @@ html, body {
     max-width: 100vw;
     overflow-x: clip;
 }
+
+
+/*Slide de vagas*/
+
+#slide-vagas {
+    overflow: hidden;
+}
+
+#slide-vagas-track {
+    display: flex;
+    animation: slide-contínuo 7s linear infinite;
+}
+
+@keyframes slide-contínuo {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+@media (min-width: 600px) {
+    #slide-vagas-track {
+        animation: slide-contínuo 20s linear infinite;
+    }
+    
+}
+
+#slide-vagas-track > div {
+    white-space: nowrap;
+    flex-shrink: 0;
+}
